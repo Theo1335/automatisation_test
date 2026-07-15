@@ -1,0 +1,6 @@
+services:
+  web:
+    build: .
+    image: devops-app
+    ports:
+       - "5001:5000"
