@@ -26,10 +26,7 @@ jobs:
     needs: tests
     runs-on: ubuntu-latest
     steps:
-      - name: Debug workspace
-        run: |
-         pwd
-         ls -la
+      - uses: actions/checkout@v4
       - name: buld docker image
         run: docker build . 
   
